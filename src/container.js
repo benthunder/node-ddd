@@ -6,7 +6,7 @@ import CreateUser from './app/user/create'
 import UpdateUser from './app/user/update'
 import RemoveUser from './app/user/remove'
 import SearchUser from './app/user/search'
-import GethUser from './app/user/get'
+import GetUser from './app/user/get'
 import Repository from './infra/database/repository'
 import logger from './infra/logger'
 
@@ -19,6 +19,7 @@ container.register({
     removeUser: asClass(RemoveUser).singleton(),
     updateUser: asClass(UpdateUser).singleton(),
     searchUser: asClass(SearchUser).singleton(),
+    getchUser: asClass(GetUser).singleton(),
     // Infra layer
     db: asClass(ManageDB).singleton(),
     userRepository: asClass(Repository).singleton(),

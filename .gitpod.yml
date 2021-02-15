@@ -1,18 +1,5 @@
+tasks:
+  - init: echo "Replace me with a build script for the project."
+    command: mkdir -p data && mongodb --dbpath data
 image:
   file: .gitpod.Dockerfile
-
-# List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/config-ports/
-ports:
-  - port: 3100 # Backend API
-    onOpen: open-preview
-
-  - port: 3000 # Web public
-    onOpen: open-preview
-
-  - port: 3200 # admin dashboard
-    onOpen: open-preview
-
-# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
-tasks:
-  - init: echo 'init script' # runs during prebuild
-    command: echo 'start script'
