@@ -1,4 +1,6 @@
 tasks:
+  - init: echo "Install dependencies"
+    command: npm i
   - init: echo "Run mongo"
     command: mkdir -p /workspace/data && mongod --dbpath /workspace/data
 image:
