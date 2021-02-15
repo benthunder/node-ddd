@@ -1,5 +1,6 @@
-tasks:
-  - init: echo "Replace me with a build script for the project."
-    command: mkdir -p data && mongodb --dbpath data
 image:
   file: .gitpod.Dockerfile
+
+tasks:
+  - init: echo "Run mongoDB"
+  - command: mkdir -p data && mongod --dbpath data

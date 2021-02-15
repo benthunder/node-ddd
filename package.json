@@ -3,6 +3,9 @@
     "eslint": "^7.20.0"
   },
   "dependencies": {
-    "awilix": "^4.3.1"
+    "awilix": "^4.3.1",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "mongoose": "^5.11.16"
   }
 }
