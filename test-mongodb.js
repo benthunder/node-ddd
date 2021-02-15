@@ -1,3 +1,3 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/node-ddd");
+mongoose.connect("mongodb://localhost:27017");
 console.log(mongoose);
